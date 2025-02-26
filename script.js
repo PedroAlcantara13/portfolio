@@ -76,6 +76,17 @@ function bPortSelect1(){
     area1.style.display = "flex"
     area2.style.display = "none"
     area3.style.display = "none"
+
+    const url = 'http://localhost:3000/projetos'
+async function chamarApi(){
+    const resp = await fetch(url);
+    if(resp.status === 200){
+        const obj = await resp.json();
+        console.log(obj[0].titulo)
+    }
+}
+
+chamarApi();
 }
 function bPortSelect2(){
     bport1.classList.remove('botao-port-select')
@@ -96,3 +107,5 @@ function bPortSelect3(){
     area3.style.display = "flex"
 
 }
+
+//json-server --watch db.json --port 3000

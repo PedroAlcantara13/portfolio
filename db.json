@@ -1,0 +1,16 @@
+{
+    "name": "portfolio",
+    "projetos": [
+        {
+            "titulo": "World Cup 2018",
+            "info": [
+                {
+                "descricao": "projeto desenvolvido durante meu curso técnico integrado. O objetivo é revisá-lo, aprimorá-lo e aplicar novos conhecimentos adquiridos ao longo do tempo. Atualizações e melhorias contínuas serão realizadas para refatoração e otimização do código.",
+                "img": "img.png"
+                }
+            ]
+        }
+    ],
+    "certificados": [],
+    "tecnologias": []
+}
