@@ -62,50 +62,49 @@ bport1.addEventListener('click', bPortSelect1)
 bport2.addEventListener('click', bPortSelect2)
 bport3.addEventListener('click', bPortSelect3)
 const area1 = document.getElementById("a1")
-const area2 = document.getElementById("a2")
-const area3 = document.getElementById("a3")
-area2.style.display = "none"
-area3.style.display = "none"
 
-function bPortSelect1(){
-    bport2.classList.remove('botao-port-select')
-    bport3.classList.remove('botao-port-select')
-    bport1.classList.add('botao-port-select')
-    console.log("B1")
 
-    area1.style.display = "flex"
-    area2.style.display = "none"
-    area3.style.display = "none"
-
-    const url = 'http://localhost:3000/projetos'
-async function chamarApi(){
+const url = 'http://localhost:3000/showcase'
+async function ListarT(){
     const resp = await fetch(url);
     if(resp.status === 200){
         const obj = await resp.json();
-        console.log(obj[0].titulo)
+        for(var i=0;i < obj[1].info.length; i++){
+            area1.innerHTML += `
+                <div class="card-proj3">
+                    <div><img class="card-image-proj3" src="${obj[1].info[i].img}" alt=""></div>
+                    <div class="heading">${obj[1].info[i].nome}</div>
+                </div>
+    `;
+            console.log(obj[1].info[i].nome)
+        }
     }
 }
 
-chamarApi();
+function bPortSelect1(){
+    area1.innerHTML = `
+    <div class="flex-port">
+        <div class="card-proj">
+            <div><img class="card-image-proj" src="img/Moon_Scout_Spray.png" alt=""></div>
+            <div class="category">Teste</div>
+            <div class="heading"> A heading that must span over two lines
+            <div class="author"> By <span class="name">Abi</span> 4 days ago</div></div>
+        </div>
+    </div>
+    `;
+
 }
 function bPortSelect2(){
-    bport1.classList.remove('botao-port-select')
-    bport3.classList.remove('botao-port-select')
-    bport2.classList.add('botao-port-select')
-
-    area1.style.display = "none"
-    area2.style.display = "flex"
-    area3.style.display = "none"
+    area1.innerHTML = `
+    <div class="flex-port">
+        <div class="card-proj">
+            <div><img class="card-image-proj" src="img/Coursera 4J1PIG0YXQ5D_page-0001.jpg" alt=""></div>
+        </div>
+    </div>
+    `;
 }
 function bPortSelect3(){
-    bport1.classList.remove('botao-port-select')
-    bport2.classList.remove('botao-port-select')
-    bport3.classList.add('botao-port-select')
-
-    area1.style.display = "none"
-    area2.style.display = "none"
-    area3.style.display = "flex"
-
+    ListarT()
 }
 
 //json-server --watch db.json --port 3000

@@ -130,8 +130,8 @@ section#portfolio {
 .area-selecionada{
     max-width: 100%;
     display: flex;
-    flex-direction: column;
-    padding: 20px;
+    flex-direction: row;
+    padding: 10px;
 }
 
 .botao-port{

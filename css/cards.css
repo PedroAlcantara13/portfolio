@@ -202,7 +202,7 @@
     border: 1px solid var(--s);
 }
 
-#a3 .card-proj{
+.card-proj3{
     width: 10%;
     background: var(--c);
     padding: 1em;
@@ -225,7 +225,7 @@
     border-radius: 6px 6px 0 0;
   }
 
-#a3 .card-image-proj {
+.card-image-proj3 {
     width: 75%;
     height: 10%;
     border-radius: 6px 6px 0 0;

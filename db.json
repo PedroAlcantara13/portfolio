@@ -1,16 +1,79 @@
 {
     "name": "portfolio",
-    "projetos": [
+    "showcase": [
         {
-            "titulo": "World Cup 2018",
+            "titulo": "Projetos",
             "info": [
                 {
+                "nome": "World Cup 2018",
                 "descricao": "projeto desenvolvido durante meu curso técnico integrado. O objetivo é revisá-lo, aprimorá-lo e aplicar novos conhecimentos adquiridos ao longo do tempo. Atualizações e melhorias contínuas serão realizadas para refatoração e otimização do código.",
                 "img": "img.png"
                 }
             ]
+        },
+        {
+            "titulo": "Tecnologias",
+            "info": [
+        {
+            "nome": "HTML",
+            "img": "img/html.png"
+        },
+        {
+            "nome": "CSS",
+            "img": "img/css.png"
+        },
+        {
+            "nome": "JavaScript",
+            "img": "img/javascript.png"
+        },
+        {
+            "nome": "Tailwind",
+            "img": "img/tailwind.png"
+        },
+        {
+            "nome": "ReactJS",
+            "img": "img/ReactJS.png"
+        },
+        {
+            "nome": "Bootstrap",
+            "img": "img/bootstrap.png"
+        },
+        {
+            "nome": "TypeScript",
+            "img": "img/typescript.png"
         }
-    ],
-    "certificados": [],
-    "tecnologias": []
+    ]
+        },
+        {
+            "titulo": "Certificados",
+            "info": [
+                {
+                    "nome": "Conduct UX Research and Test Early Concepts",
+                    "img": "Coursera 4J1PIG0YXQ5D_page-0001.jpg"
+                },
+                {
+                    "nome": "Create High-Fidelity Designs and Prototypes in Figma",
+                    "img": "Coursera HCSNRU0Y0FEV_page-0001.jpg"
+                },
+                {
+                    "nome": "Start the UX Design Process: Empathize, Define, and Ideate",
+                    "img": "Coursera L36KPCZNBIAR_page-0001.jpg"
+                },
+                {
+                    "nome": "Build Wireframes and Low-Fidelity Prototypes",
+                    "img": "Coursera N0OT52MTUBXH_pages-to-jpg-0001.jpg"
+                },
+                {
+                    "nome": "Foundations of User Experience (UX) Design",
+                    "img": "Coursera VJDVVDCHXLQW_page-0001.jpg"
+                },
+                {
+                    "nome": "HTML E CSS: AMBIENTES DE DESENVOLVIMENTO, ESTRUTURA DE ARQUIVOS E TAGS",
+                    "img": "Alura html e css.jpg"
+                }
+            ]
+        }
+
+
+    ]
 }
